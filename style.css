@@ -1,0 +1,103 @@
+/* Habaynta Guud */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* 2-Column Layout (Home Page) */
+.container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sidebar {
+    float: left;
+    width: 25%;
+    background-color: #ddd;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.main-content {
+    float: right;
+    width: 70%;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Float, Clear iyo Overflow (Team Page) */
+.team-card {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+
+.team-card:nth-child(3) {
+    margin-right: 0;
+}
+
+.profile-card {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.profile-img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+/* Fixes for Float layout layout issues using Overflow & Clear */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Foomamka (Forms Page) */
+form {
+    background: #fff;
+    padding: 20px;
+    max-width: 400px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
